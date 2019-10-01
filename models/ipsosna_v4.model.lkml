@@ -3,13 +3,6 @@ connection: "brandpulse1"
 # include all the views
 include: "/views/**/*.view"
 
-# datagroup: ipsosna_v4_default_datagroup {
-#   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-#   max_cache_age: "1 hour"
-# }
-
-# persist_with: ipsosna_v4_default_datagroup
-
 # explore: a_variable_master {}
 #
 # explore: b_category_master {}
