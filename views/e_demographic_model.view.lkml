@@ -3537,6 +3537,8 @@ view: e_demographic_model {
 
   dimension: unique_id {
     type: number
+    primary_key: yes
+    hidden: yes
     sql: ${TABLE}.Unique_ID ;;
   }
 
