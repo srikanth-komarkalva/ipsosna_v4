@@ -34,6 +34,7 @@ view: c_variable_category_map {
   }
 
   measure: count {
+    hidden: yes
     type: count
     drill_fields: []
   }

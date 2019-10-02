@@ -1,8 +1,9 @@
 view: f_variable_fact_flat_model {
-  sql_table_name: BrandPulse1.F_variable_fact_flat_model ;;
+  sql_table_name: BrandPulse1.Stage1_F_variable_fact_flat_model ;;
 
   dimension: category_id {
     type: string
+    hidden: yes
     sql: ${TABLE}.CategoryID ;;
   }
 
@@ -1042,6 +1043,14 @@ view: f_variable_fact_flat_model {
     hidden: yes
     type: number
     sql: ${TABLE}.Unique_ID ;;
+  }
+
+  measure: unwtct {
+    group_label: "Weight Metrics"
+    description: "The count of respondents"
+    label: "Unweighted Count"
+    type: count_distinct
+    sql: ${unique_id} ;;
   }
 
   measure: count {
