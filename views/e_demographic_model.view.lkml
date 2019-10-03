@@ -4366,7 +4366,7 @@ view: e_demographic_model {
     label: "Weighted Count"
     type: sum
     sql: ${wtvar} ;;
-#     value_format_name: decimal_2
+    value_format_name: decimal_2
   }
 
   measure: sum_wtct_subtotal {
