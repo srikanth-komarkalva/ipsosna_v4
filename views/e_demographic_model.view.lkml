@@ -5077,26 +5077,6 @@ view: e_demographic_model {
               {% if qq_p_use_primary_vdcl._is_selected %} ${qq_p_use_primary_vdcl} , {% endif %}
               {% if qq_p_use_primary_vddb._is_selected %} ${qq_p_use_primary_vddb} , {% endif %}
               {% if qq_p_use_primary_wifi._is_selected %} ${qq_p_use_primary_wifi} , {% endif %}
-              {% if respondent_serial._is_selected %} ${respondent_serial} , {% endif %}
-              {% if unique_id._is_selected %} ${unique_id} , {% endif %}
-              {% if wtvar._is_selected %} ${wtvar} , {% endif %}
-              {% if wtvar_android._is_selected %} ${wtvar_android} , {% endif %}
-              {% if wtvar_blue._is_selected %} ${wtvar_blue} , {% endif %}
-              {% if wtvar_changeagents._is_selected %} ${wtvar_changeagents} , {% endif %}
-              {% if wtvar_coat._is_selected %} ${wtvar_coat} , {% endif %}
-              {% if wtvar_ios._is_selected %} ${wtvar_ios} , {% endif %}
-              {% if wtvar_kta_1824._is_selected %} ${wtvar_kta_1824} , {% endif %}
-              {% if wtvar_kta_1834._is_selected %} ${wtvar_kta_1834} , {% endif %}
-              {% if wtvar_kta_1844._is_selected %} ${wtvar_kta_1844} , {% endif %}
-              {% if wtvar_kta_2534._is_selected %} ${wtvar_kta_2534} , {% endif %}
-              {% if wtvar_kta_2544._is_selected %} ${wtvar_kta_2544} , {% endif %}
-              {% if wtvar_kta_3544._is_selected %} ${wtvar_kta_3544} , {% endif %}
-              {% if wtvar_nest._is_selected %} ${wtvar_nest} , {% endif %}
-              {% if wtvar_orange._is_selected %} ${wtvar_orange} , {% endif %}
-              {% if wtvar_pubtransit._is_selected %} ${wtvar_pubtransit} , {% endif %}
-              {% if wtvar_red._is_selected %} ${wtvar_red} , {% endif %}
-              {% if wtvar_yap._is_selected %} ${wtvar_yap} , {% endif %}
-              {% if wtvar_ytf._is_selected %} ${wtvar_ytf} , {% endif %}
               1)
               ;;
   }
