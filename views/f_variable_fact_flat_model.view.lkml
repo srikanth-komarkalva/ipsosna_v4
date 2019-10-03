@@ -1,5 +1,5 @@
 view: f_variable_fact_flat_model {
-  sql_table_name: BrandPulse1.Stage1_F_variable_fact_flat_model ;;
+  sql_table_name: BrandPulse1.F_variable_fact_flat_model ;;
 
   dimension: category_id {
     type: string
