@@ -10,31 +10,31 @@ view: e_demographic_model_2 {
 
     allowed_value: {
       label: "Country"
-      value: "country10"
+      value: "country_"
     }
     allowed_value: {
       label: "Wave"
-      value: "wave_new"
+      value: "fv_wave"
     }
     allowed_value: {
-      label: "Age Quota"
-      value: "age_quota"
+      label: "Age"
+      value: "bd_age_group"
+    }
+    allowed_value: {
+      label: "Education"
+      value: "bd_education"
+    }
+    allowed_value: {
+      label: "Income"
+      value: "bd_income"
     }
     allowed_value: {
       label: "Gender"
-      value: "quota_gender"
+      value: "bd_gender"
     }
     allowed_value: {
-      label: "Creator Min"
-      value: "c_creatormin"
-    }
-    allowed_value: {
-      label: "Favorite"
-      value: "c_favorite"
-    }
-    allowed_value: {
-      label: "Employee Type"
-      value: "emp01"
+      label: "Region"
+      value: "bd_region"
     }
   }
 
@@ -45,31 +45,31 @@ view: e_demographic_model_2 {
 
     allowed_value: {
       label: "Country"
-      value: "country10"
+      value: "country_"
     }
     allowed_value: {
       label: "Wave"
-      value: "wave_new"
+      value: "fv_wave"
     }
     allowed_value: {
-      label: "Age Quota"
-      value: "age_quota"
+      label: "Age"
+      value: "bd_age_group"
+    }
+    allowed_value: {
+      label: "Education"
+      value: "bd_education"
+    }
+    allowed_value: {
+      label: "Income"
+      value: "bd_income"
     }
     allowed_value: {
       label: "Gender"
-      value: "quota_gender"
+      value: "bd_gender"
     }
     allowed_value: {
-      label: "Creator Min"
-      value: "c_creatormin"
-    }
-    allowed_value: {
-      label: "Favorite"
-      value: "c_favorite"
-    }
-    allowed_value: {
-      label: "Employee Type"
-      value: "emp01"
+      label: "Region"
+      value: "bd_region"
     }
   }
 
