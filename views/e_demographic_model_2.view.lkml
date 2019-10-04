@@ -4491,6 +4491,63 @@ view: e_demographic_model_2 {
                     {% if b_category_master.category_label._is_selected %} ${b_category_master.category_label} , {% endif %}
 
                 -- all demographic fields
+
+                    {% if attribute_selector1._parameter_value == 'country_' and attribute_selector1_dim._is_selected %}
+                      ${country_} ,
+                    {% elsif attribute_selector2._parameter_value == 'country_' and attribute_selector2_dim._is_selected %}
+                      ${country_} ,
+                    {% elsif country_._is_selected %}
+                      ${country_} ,
+                    {% endif %}
+
+                    {% if attribute_selector1._parameter_value == 'fv_wave' and attribute_selector1_dim._is_selected %}
+                      ${fv_wave} ,
+                    {% elsif attribute_selector2._parameter_value == 'fv_wave' and attribute_selector2_dim._is_selected %}
+                      ${fv_wave} ,
+                    {% elsif fv_wave._is_selected %}
+                      ${fv_wave} ,
+                    {% endif %}
+
+                    {% if attribute_selector1._parameter_value == 'bd_age_group' and attribute_selector1_dim._is_selected %}
+                      ${bd_age_group} ,
+                    {% elsif attribute_selector2._parameter_value == 'bd_age_group' and attribute_selector2_dim._is_selected %}
+                      ${bd_age_group} ,
+                    {% elsif bd_age_group._is_selected %}
+                      ${bd_age_group} ,
+                    {% endif %}
+
+                    {% if attribute_selector1._parameter_value == 'bd_education' and attribute_selector1_dim._is_selected %}
+                      ${bd_education} ,
+                    {% elsif attribute_selector2._parameter_value == 'bd_education' and attribute_selector2_dim._is_selected %}
+                      ${bd_education} ,
+                    {% elsif bd_education._is_selected %}
+                      ${bd_education} ,
+                    {% endif %}
+
+                    {% if attribute_selector1._parameter_value == 'bd_income' and attribute_selector1_dim._is_selected %}
+                      ${bd_income} ,
+                    {% elsif attribute_selector2._parameter_value == 'bd_income' and attribute_selector2_dim._is_selected %}
+                      ${bd_income} ,
+                    {% elsif bd_income._is_selected %}
+                      ${bd_income} ,
+                    {% endif %}
+
+                    {% if attribute_selector1._parameter_value == 'bd_gender' and attribute_selector1_dim._is_selected %}
+                      ${bd_gender} ,
+                    {% elsif attribute_selector2._parameter_value == 'bd_gender' and attribute_selector2_dim._is_selected %}
+                      ${bd_gender} ,
+                    {% elsif bd_gender._is_selected %}
+                      ${bd_gender} ,
+                    {% endif %}
+
+                    {% if attribute_selector1._parameter_value == 'bd_region' and attribute_selector1_dim._is_selected %}
+                      ${bd_region} ,
+                    {% elsif attribute_selector2._parameter_value == 'bd_region' and attribute_selector2_dim._is_selected %}
+                      ${bd_region} ,
+                    {% elsif bd_region._is_selected %}
+                      ${bd_region} ,
+                    {% endif %}
+
                     {% if bd_age._is_selected %} ${bd_age} , {% endif %}
                     {% if bd_age_group._is_selected %} ${bd_age_group} , {% endif %}
                     {% if bd_age_parent._is_selected %} ${bd_age_parent} , {% endif %}

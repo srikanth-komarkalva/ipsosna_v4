@@ -12,14 +12,14 @@ explore: f_variable_fact_flat_model {
   join: b_category_master {
     view_label: "Google Brand Pulse for Users"
     type: inner
-    relationship: many_to_one
+    relationship: one_to_one
     sql_on: ${f_variable_fact_flat_model.category_id} = ${b_category_master.category_id};;
   }
 
   join: c_variable_category_map {
     view_label: "Google Brand Pulse for Users"
     type: inner
-    relationship: many_to_one
+    relationship: one_to_one
     sql_on: ${f_variable_fact_flat_model.category_id} = ${c_variable_category_map.category_id};;
   }
 
