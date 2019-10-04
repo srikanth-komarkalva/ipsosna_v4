@@ -3,6 +3,7 @@ view: f_variable_fact_flat_model {
 
   dimension: category_id {
     type: string
+    primary_key: yes
     hidden: yes
     sql: ${TABLE}.CategoryID ;;
   }
@@ -1383,7 +1384,7 @@ view: f_variable_fact_flat_model {
 
   dimension: unique_id {
     hidden: yes
-    primary_key: yes
+#     primary_key: yes
     type: number
     sql: ${TABLE}.Unique_ID ;;
   }
