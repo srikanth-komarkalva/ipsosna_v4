@@ -4528,8 +4528,14 @@ view: e_demographic_model_2 {
     label: "Weighted Count"
     type: sum
     sql: ${wtvar} ;;
+    drill_fields: [detail*]
     value_format_name: decimal_2
   }
+
+  set: detail {
+    fields: [bd_age_group,bd_education,bd_gender,wtct,ytcvariable_eav.unwtct]
+  }
+
 
   measure: sum_wtct_subtotal {
     type: number
@@ -5326,7 +5332,7 @@ view: e_demographic_model_2 {
     group_label: "Weight Metrics"
     label: "Percent of Base"
     sql: ${wtct}/${sum_wtct_subtotal} ;;
-#     drill_fields: [detail*]
+    drill_fields: [detail*]
     value_format_name: percent_0
   }
 
