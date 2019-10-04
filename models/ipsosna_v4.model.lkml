@@ -3,16 +3,6 @@ connection: "brandpulse1"
 # include all the views
 include: "/views/**/*.view"
 
-# explore: a_variable_master {}
-#
-# explore: b_category_master {}
-#
-# explore: c_variable_category_map {}
-#
-# explore: d_variable_value_master {}
-#
-# explore: e_demographic_model {}
-
 explore: f_variable_fact_flat_model {
   label: "Google Brand Pulse for Users"
   view_name: f_variable_fact_flat_model
