@@ -8,13 +8,6 @@ explore: f_variable_fact_flat_model {
   view_name: f_variable_fact_flat_model
   view_label: "Google Brand Pulse for Users"
 
-  join: e_demographic_model {
-    view_label: "Google Brand Pulse for Users"
-    type: inner
-    relationship: many_to_one
-    sql_on: ${f_variable_fact_flat_model.unique_id} = ${e_demographic_model.unique_id};;
-  }
-
   join: b_category_master {
     view_label: "Google Brand Pulse for Users"
     type: inner
@@ -27,6 +20,13 @@ explore: f_variable_fact_flat_model {
     type: inner
     relationship: many_to_one
     sql_on: ${f_variable_fact_flat_model.category_id} = ${c_variable_category_map.category_id};;
+  }
+
+  join: e_demographic_model {
+    view_label: "Google Brand Pulse for Users"
+    type: inner
+    relationship: many_to_one
+    sql_on: ${f_variable_fact_flat_model.unique_id} = ${e_demographic_model.unique_id};;
   }
 }
 
