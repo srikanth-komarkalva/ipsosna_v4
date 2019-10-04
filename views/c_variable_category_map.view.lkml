@@ -4,7 +4,6 @@ view: c_variable_category_map {
   dimension: category_id {
     label: "Brand"
     group_label: "Question Information"
-#     order_by_field: b_category_master.catorder
     hidden: yes
     primary_key: yes
     type: string

@@ -37,6 +37,8 @@ explore: g_variable_fact_eav_model {
   view_name: g_variable_fact_eav_model
   view_label: "Google Brand Pulse Crosstab"
 
+  sql_always_where: ${value} is not null ;;
+
   join: a_variable_master {
     view_label: "Google Brand Pulse Crosstab"
     type: inner
