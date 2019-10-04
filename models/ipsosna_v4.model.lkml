@@ -3,6 +3,7 @@ connection: "brandpulse1"
 # include all the views
 include: "/views/**/*.view"
 
+# User Explore for Brand Pulse users
 explore: f_variable_fact_flat_model {
   label: "Google Brand Pulse for Users"
   view_name: f_variable_fact_flat_model
@@ -30,6 +31,7 @@ explore: f_variable_fact_flat_model {
   }
 }
 
+#Crosstab Explore
 explore: g_variable_fact_eav_model {
   label: "Google Brand Pulse Crosstab"
   view_name: g_variable_fact_eav_model
