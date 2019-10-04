@@ -111,8 +111,58 @@ view: e_demographic_model_2 {
     {% endif %};;
   }
 
+  parameter: significance_dropdown {
+    label: "Significance"
+#     hidden: yes
+    description: "Choose Significance for crosstabs"
+    type: string
+    allowed_value: {
+      label: "Yes"
+      value: "yes"
+    }
+    allowed_value: {
+      label: "No"
+      value: "no"
+    }
+  }
 
+  #Significance Filter
+    dimension: significance_dropdown_dim {
+      label: "Significance"
+      group_label: "Parameters"
+      type: string
+      sql: {% parameter significance_dropdown  %};;
+    }
 
+  parameter: confidence_interval {
+    label: "Confidence Interval Parameter"
+    description: "Choose Confidence % for crosstabs"
+    type: string
+    allowed_value: {
+      label: "85%"
+      value: "1.44"
+    }
+    allowed_value: {
+      label: "90%"
+      value: "1.65"
+    }
+    allowed_value: {
+      label: "95%"
+      value: "1.96"
+    }
+    allowed_value: {
+      label: "99%"
+      value: "2.58"
+    }
+  }
+
+#Confidence Interval Filter
+  dimension: confidence_interval_dim {
+    label: "Confidence Interval"
+    group_label: "Parameters"
+    type: string
+    sql:  {% parameter confidence_interval  %};;
+  }
 
   dimension: bd_age {
     group_label: "Demographic Fields"
