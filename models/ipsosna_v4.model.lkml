@@ -8,6 +8,14 @@ explore: f_variable_fact_flat_model {
   label: "Google Brand Pulse for Users"
   view_name: f_variable_fact_flat_model
   view_label: "Google Brand Pulse for Users"
+#   sql_always_having: ${e_demographic_model.percent_weight} is not null ;;
+#   sql_always_having: sum(${e_demographic_model.percent_weight}) ;;
+#   always_filter: {
+#     filters: {
+#       field: e_demographic_model.percent_weight
+#       value: "null"
+#     }
+#   }
 
   join: b_category_master {
     view_label: "Google Brand Pulse for Users"
