@@ -4374,6 +4374,10 @@ view: e_demographic_model {
     hidden: yes
     sql:  sum(${wtct}) OVER ( PARTITION BY
 
+          -- all category master fields
+              {% if b_category_master.category_id._is_selected %} ${b_category_master.category_id} , {% endif %}
+              {% if b_category_master.category_label._is_selected %} ${b_category_master.category_label} , {% endif %}
+
           -- all demographic fields
               {% if bd_age._is_selected %} ${bd_age} , {% endif %}
               {% if bd_age_group._is_selected %} ${bd_age_group} , {% endif %}

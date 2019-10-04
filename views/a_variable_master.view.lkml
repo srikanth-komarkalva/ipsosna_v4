@@ -29,6 +29,7 @@ view: a_variable_master {
 
   dimension: varorder {
     group_label: "Question Information"
+    hidden: yes
     type: number
     sql: ${TABLE}.Varorder ;;
   }
