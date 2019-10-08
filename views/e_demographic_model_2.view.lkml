@@ -5992,7 +5992,7 @@ view: e_demographic_model_2 {
                     {% if b_category_master.category_label._is_selected %} ${b_category_master.category_label} , {% endif %}
 
                    -- all a_variable_master fields
-                   -- {% if a_variable_master.variable_id._is_selected %} ${a_variable_master.variable_id} , {% endif %}
+                    {% if a_variable_master.variable_id._is_selected %} ${a_variable_master.variable_id} , {% endif %}
                     {% if a_variable_master.variable_label._is_selected %} ${a_variable_master.variable_label} , {% endif %}
                     {% if a_variable_master.question._is_selected %} ${a_variable_master.question} , {% endif %}
 
