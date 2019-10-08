@@ -78,7 +78,7 @@ explore: g_variable_fact_eav_model {
   join: e_demographic_model_2 {
     view_label: "Google Brand Pulse Crosstab"
     type: inner
-    relationship: many_to_one
+    relationship: one_to_one
     sql_on: ${g_variable_fact_eav_model.unique_id} = ${e_demographic_model_2.unique_id};;
   }
 }
