@@ -5,7 +5,6 @@ view: c_variable_category_map {
     label: "Brand"
     group_label: "Question Information"
     hidden: yes
-    primary_key: yes
     type: string
     sql: ${TABLE}.CategoryId ;;
   }
@@ -19,6 +18,7 @@ view: c_variable_category_map {
   dimension: variable_id {
     label: "Variable ID"
     hidden: yes
+    primary_key: yes
     group_label: "Question Information"
     type: string
     sql: ${TABLE}.VariableId ;;

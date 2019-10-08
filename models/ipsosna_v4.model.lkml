@@ -64,7 +64,7 @@ explore: g_variable_fact_eav_model {
   join: c_variable_category_map {
     view_label: "Google Brand Pulse Crosstab"
     type: inner
-    relationship: many_to_one
+    relationship: one_to_one
     sql_on: ${g_variable_fact_eav_model.category_id} = ${c_variable_category_map.category_id};;
   }
 
