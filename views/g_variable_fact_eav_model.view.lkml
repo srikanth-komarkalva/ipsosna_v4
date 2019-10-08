@@ -26,6 +26,7 @@ view: g_variable_fact_eav_model {
     label: "Value"
     group_label: "Question Information"
     type: string
+    order_by_field: d_variable_value_master.sort_order
     sql: ${TABLE}.Value ;;
   }
 
