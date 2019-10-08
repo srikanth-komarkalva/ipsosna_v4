@@ -17,7 +17,7 @@ view: g_variable_fact_eav_model {
 
   dimension: unique_id {
     hidden: yes
-    primary_key: yes
+#     primary_key: yes
     type: number
     sql: ${TABLE}.Unique_ID ;;
   }
@@ -26,12 +26,13 @@ view: g_variable_fact_eav_model {
     label: "Value"
     group_label: "Question Information"
     type: string
-    hidden: yes
+#     hidden: yes
 #     order_by_field: d_variable_value_master.sort_order
     sql: ${TABLE}.Value ;;
   }
 
   dimension: variable_id {
+    primary_key: yes
     label: "Variable Id"
     group_label: "Question Information"
     hidden: yes

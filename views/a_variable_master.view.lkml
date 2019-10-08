@@ -6,6 +6,7 @@ view: a_variable_master {
     order_by_field: varorder
     label: "Variable Id"
     primary_key: yes
+#     hidden: yes
     type: string
     sql: ${TABLE}.VariableId ;;
   }

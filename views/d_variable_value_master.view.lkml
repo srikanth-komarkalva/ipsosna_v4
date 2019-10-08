@@ -14,7 +14,7 @@ view: d_variable_value_master {
   }
 
   dimension: value {
-#     hidden: yes
+    hidden: yes
     label: "Value"
     group_label: "Question Information"
     order_by_field: sort_order
