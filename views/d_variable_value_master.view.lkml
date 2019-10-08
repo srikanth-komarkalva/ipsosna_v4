@@ -9,14 +9,15 @@ view: d_variable_value_master {
 
   dimension: sort_order {
     type: number
-    label: "Sort Order"
-#     hidden: yes
+    label: "Sort Order vv"
+    group_label: "Question Information"
+    hidden: yes
     sql: ${TABLE}.Sort_Order ;;
   }
 
   dimension: value {
     hidden: yes
-    label: "Value"
+    label: "Value vv"
     group_label: "Question Information"
 #     order_by_field: sort_order
     type: string
@@ -25,7 +26,7 @@ view: d_variable_value_master {
 
   dimension: variable_id {
     hidden: yes
-    label: "Variable ID"
+    label: "Variable ID vv"
     group_label: "Question Information"
     primary_key: yes
     type: string
